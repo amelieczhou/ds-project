@@ -87,7 +87,7 @@ void initiater::handler()
 			terminator* ter_event = new terminator(time + duration, endStation);
 			sortedQueue.push(ter_event);
 		}			
-		else if (endStation > 19)
+		else if (station+1 > 19)
 		{
 			terminator* ter_event = new terminator(time + travelledDuration, station);
 			sortedQueue.push(ter_event);
@@ -122,7 +122,7 @@ void handover::handler()
 			terminator* ter_event = new terminator(time + duration, endStation);
 			sortedQueue.push(ter_event);
 		}			
-		else if (endStation > 19)
+		else if (station +1> 19)
 		{
 			terminator* ter_event = new terminator(time + travelledDuration, station);
 			sortedQueue.push(ter_event);
